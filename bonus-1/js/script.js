@@ -33,11 +33,14 @@ for(let x = 1; x <= 100; ++x) {
     container.append(newDiv)
 
     if (x % 3 === 0 && x % 5 === 0) {
+        console.log("FizzBuzz");
         newDiv.innerHTML = "FizzBuzz";
-    } else if (x % 3 === 0) {   
+    } else if (x % 3 === 0) {
+        console.log("Fizz");   
         newDiv.innerHTML = "Fizz";
     }
      else if (x % 5 === 0) {
+        console.log("Buzz");
         newDiv.innerHTML = "Buzz";
     } else {
         console.log(x);
