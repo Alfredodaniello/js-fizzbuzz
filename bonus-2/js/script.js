@@ -38,20 +38,20 @@ for(let x = 1; x <= 100; ++x) {
     let message;
     if (x % 3 === 0 && x % 5 === 0) {
         message = "FizzBuzz";
-        newDiv.innerHTML = "FizzBuzz";
+        newDiv.innerHTML = message;
         newDiv.classList.add("blue");
     } else if (x % 3 === 0) {
         message ="Fizz";  
-        newDiv.innerHTML = "Fizz";
+        newDiv.innerHTML = message;
         newDiv.classList.add("red");
     }
      else if (x % 5 === 0) {
         message = "Buzz";
-        newDiv.innerHTML = "Buzz";
+        newDiv.innerHTML = message;
         newDiv.classList.add("pink");
     } else {
         message = x;
-        newDiv.innerHTML = x;
+        newDiv.innerHTML = message;
         newDiv.classList.add("green");
     }
     console.log(message);

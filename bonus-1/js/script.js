@@ -35,17 +35,17 @@ for(let x = 1; x <= 100; ++x) {
 
     if (x % 3 === 0 && x % 5 === 0) {
         message ="FizzBuzz";
-        newDiv.innerHTML = "FizzBuzz";
+        newDiv.innerHTML = message;
     } else if (x % 3 === 0) {
         message = "Fizz";   
-        newDiv.innerHTML = "Fizz";
+        newDiv.innerHTML = message;
     }
      else if (x % 5 === 0) {
         message = "Buzz";
-        newDiv.innerHTML = "Buzz";
+        newDiv.innerHTML = message;
     } else {
         message = x;
-        newDiv.innerHTML = x;
+        newDiv.innerHTML = message;
     }
     console.log(message);
 }
