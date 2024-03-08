@@ -24,14 +24,16 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 //Ottengo i numeri da 1 a 100
 for(let x = 1; x <= 100; ++x) {
     //stabilisco se sono multipli di 3, di 5 o di entrambi 
+    let message;
     if (x % 3 === 0 && x % 5 === 0) {
-        console.log("FizzBuzz");
+        message = "FizzBuzz";
     } else if (x % 3 === 0) {   
-        console.log("Fizz");
+        message = "Fizz";
     }
      else if (x % 5 === 0) {
-        console.log("Buzz");
+        message ="Buzz";
     } else {
-        console.log(x);
+        message = x;
     }
+    console.log(message);
 }

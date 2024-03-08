@@ -31,19 +31,21 @@ const container = document.querySelector("#container");
 for(let x = 1; x <= 100; ++x) {
     const newDiv = document.createElement("div")
     container.append(newDiv)
+    let message;
 
     if (x % 3 === 0 && x % 5 === 0) {
-        console.log("FizzBuzz");
+        message ="FizzBuzz";
         newDiv.innerHTML = "FizzBuzz";
     } else if (x % 3 === 0) {
-        console.log("Fizz");   
+        message = "Fizz";   
         newDiv.innerHTML = "Fizz";
     }
      else if (x % 5 === 0) {
-        console.log("Buzz");
+        message = "Buzz";
         newDiv.innerHTML = "Buzz";
     } else {
-        console.log(x);
+        message = x;
         newDiv.innerHTML = x;
     }
+    console.log(message);
 }

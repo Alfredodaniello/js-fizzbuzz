@@ -35,23 +35,24 @@ for(let x = 1; x <= 100; ++x) {
     const newDiv = document.createElement("div");
     container.append(newDiv);
     newDiv.classList.add("my-div");
-
+    let message;
     if (x % 3 === 0 && x % 5 === 0) {
-        console.log("FizzBuzz")
+        message = "FizzBuzz";
         newDiv.innerHTML = "FizzBuzz";
         newDiv.classList.add("blue");
     } else if (x % 3 === 0) {
-        console.log("Fizz");  
+        message ="Fizz";  
         newDiv.innerHTML = "Fizz";
         newDiv.classList.add("red");
     }
      else if (x % 5 === 0) {
-        console.log("Buzz");
+        message = "Buzz";
         newDiv.innerHTML = "Buzz";
         newDiv.classList.add("pink");
     } else {
-        console.log(x);
+        message = x;
         newDiv.innerHTML = x;
         newDiv.classList.add("green");
     }
+    console.log(message);
 }
